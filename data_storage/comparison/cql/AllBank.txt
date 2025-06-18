@@ -1,0 +1,1 @@
+MATCH (n:Bank) RETURN n LIMIT 25

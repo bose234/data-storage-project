@@ -1,0 +1,1 @@
+MATCH p=()-[r:FIRST_TX]->() RETURN p LIMIT 5

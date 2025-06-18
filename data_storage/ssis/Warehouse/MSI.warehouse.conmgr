@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="MSI.warehouse"
+  DTS:DTSID="{6BAFD90C-45D8-48DE-8CD3-D3F9DC7B4B4A}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=MSI;Initial Catalog=warehouse;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Warehouse-{6BAFD90C-45D8-48DE-8CD3-D3F9DC7B4B4A}MSI.warehouse;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

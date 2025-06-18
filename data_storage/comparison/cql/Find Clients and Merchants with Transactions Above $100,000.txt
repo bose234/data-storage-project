@@ -1,0 +1,3 @@
+MATCH (c:Client)-[:PERFORMED]->(t:Transaction)-[:TO]->(m:Merchant)
+WHERE t.amount > 100000
+RETURN c.name AS clientName, m.name AS merchantName, t.amount AS transactionAmount

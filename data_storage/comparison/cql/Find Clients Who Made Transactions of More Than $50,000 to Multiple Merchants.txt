@@ -1,0 +1,5 @@
+MATCH (c:Client)-[:PERFORMED]->(t:Transaction)-[:TO]->(m:Merchant)
+WHERE t.amount > 50000
+WITH c, COUNT(DISTINCT m) AS merchantCount
+WHERE merchantCount > 1
+RETURN c.name AS clientName, merchantCount AS numberOfMerchants
